@@ -4,7 +4,7 @@ import Card from '../Card/Card'
 import {RiGitRepositoryFill} from 'react-icons/ri'
 import {VscRepo} from 'react-icons/vsc'
 import {SlUserFollow, SlUserFollowing} from 'react-icons/sl'
-import CoinsGraph from '../Graph/CoinsGraph'
+import CommitsGraph from '../Graph/CommitsGraph'
 import PieChart from '../PieChart/PieChart'
 import Repos from '../Repos/Repos'
 import githubApi from '@/fetchApi/githubApi'
@@ -20,10 +20,10 @@ const Analytics = () => {
         <Card title='Followers' value={data?.followers} component={<SlUserFollow/>} color='#EFDADA'/>
         <Card title='Following' value={data?.following} component={<SlUserFollowing/>} color='#DEE0EF'/>
       </div>
-      {/* <div className={styles.graph}>
-        <CoinsGraph />
+      <div className={styles.graph}>
+        <CommitsGraph />
       </div>
-      <div className={styles.pieChart}>
+      {/* <div className={styles.pieChart}>
         <PieChart/>
         <Repos />
       </div> */}

@@ -1,0 +1,44 @@
+
+.main{
+    width: 75vw;
+    margin-left: 2vw;
+    margin-right: 2.5vw;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.graph{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.title{
+    padding-left: 10px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    /* line-height: 22px; */
+    color: #000000;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .main{
+        width: 95vw;
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+    }
+    .graph {
+        min-width: 95vw;
+    }
+    .title{
+        font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    /* .main{
+        height: 125px;
+    } */
+  }
