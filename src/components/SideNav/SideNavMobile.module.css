@@ -6,7 +6,9 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    position: absolute;
+  top: 0;
+  z-index: 1;
 }
 .mainNotShow{
     background-color: #000000;

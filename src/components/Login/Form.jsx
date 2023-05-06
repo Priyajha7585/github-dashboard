@@ -6,21 +6,16 @@ import { RiAppleFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 
 const Form = () => {
-  const session = useSession();
   const { register, handleSubmit } = useForm();
-//   if (session.status !== "unauthenticated") {
-//     return <p>You are already signed in</p>;
-//   }
 
   const onSubmit = async (data) => {
     const { name, email, password } = data;
-    const result = await signIn("google", {
+    const result = await signIn("github", {
       name,
       email,
       password,
       callbackUrl: "/",
     });
-    console.log(result);
   };
   return (
     <div className={styles.main}>
