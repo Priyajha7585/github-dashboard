@@ -1,0 +1,132 @@
+.main {
+  background-color: #F5F5F5;
+  /* background-color: green; */
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  color: #000000;
+}
+.subHeading{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.btnWrapper{
+    width: 385px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btn{
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    background: #FFFFFF;
+    color: #858585;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.formDiv{
+    background: #FFFFFF;
+    width: 385px;
+    height: 317px;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-family: 'Lato';
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+margin-bottom: 10px;
+}
+.input{
+    height: 40px;
+    width: 100%;
+    background: #F5F5F5;
+border-radius: 10px;
+border: none;
+margin-bottom: 20px;
+color: black;
+}
+.password{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+margin-bottom: 20px;
+color: #346BD5;
+}
+.signIn{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: #000000;
+    border: none;
+}
+.account{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+color: #858585;
+}
+@media only screen and (max-width: 767px) {
+  .main {
+    height: 110vh;
+    margin-top: "70px";
+    width: 100vw;
+  }
+  .mainWrapper{
+    width: 90vw;
+  }
+  .btnWrapper{
+    width: 100%;
+    flex-direction: row;
+  }
+  .btn{
+    width: 48%;
+  }
+  .formDiv{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+    .main{
+        height: 120vh;
+    }
+    .btnWrapper{
+        height: 70px;
+        width: 100%;
+        flex-direction: column;
+      }
+    .btn{
+        width: 100%;
+      }
+}

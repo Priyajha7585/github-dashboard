@@ -1,0 +1,31 @@
+.main{
+    width: 35vh;
+    height: 30vh;
+    /* background-color: blue; */
+    border: 2px solid black;
+    margin-left: 2.5vh;
+}
+.pie{
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5vh;
+    /* background-color: green */
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height */
+    margin-bottom: -25px;
+
+    color: #000000;
+
+}

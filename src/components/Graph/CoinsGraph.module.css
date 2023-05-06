@@ -1,0 +1,32 @@
+
+.main{
+    /* height: 359px; */
+    width: 75vw;
+    /* margin-left: 2vw;
+    margin-right: 2.5vw; */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.graph{
+    height: 359px;
+    /* width: 75vw; */
+    background-color: white;
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .main{
+        /* height: 260px; */
+        width: 95vw;
+        margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    }
+    .graph {
+        min-width: 95vw;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    /* .main{
+        height: 125px;
+    } */
+  }

@@ -1,0 +1,14 @@
+.main {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 767px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+      /* other styles */
+    }
+  }
