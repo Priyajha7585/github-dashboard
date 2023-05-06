@@ -22,7 +22,7 @@ const Header = () => {
             <img src={session.data.user.image} className={styles.image} onClick={()=>signOut()}/>
           </div>
       </div>
-      {/* <Analytics/> */}
+      <Analytics/>
     </div>
   )
 }

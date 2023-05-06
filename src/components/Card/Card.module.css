@@ -1,30 +1,51 @@
 .main{
-    height: 15vh;
+    height: 10vh;
     width:24%;
-    background-color: blue;
+    /* background-color: blue; */
+    color: black;
     border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
 }
-
 .wrapperOne{
-    /* background-color: green; */
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 10px;
 }
+.wrapperOne p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 20px;
+}
+.wrapperOne h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
 .wrapperTwo{
-    /* background-color: pink; */
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
 }
+.wrapperTwo svg{
+    height: 50%;
+    width: 100%;
+}
 @media only screen and (max-width: 767px) {
+    .wrapperOne p{
+        font-size: 10px;
+    }
+    .wrapperOne h4{
+        font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 425px) {
     .main{
         width: 48%;
     }
-  }
+}
