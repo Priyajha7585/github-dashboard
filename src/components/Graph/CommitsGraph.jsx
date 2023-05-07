@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Chart from 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 import styles from './CommitsGraph.module.css';
+import githubCommitData from '@/fetchApi/githubCommitData';
 
 function CommitsGraph() {
+  // const commitData = githubCommitData()
   const [commitData, setCommitData] = useState({
     thisYearCommits: [],
     lastYearCommits: [],
