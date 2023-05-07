@@ -6,17 +6,8 @@ export default NextAuth({
     Providers({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      authorizationUrl: 'https://accounts.google.com/o/oauth2/v2/auth?prompt=consent&access_type=offline&response_type=code',
-      scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email',
+    //   authorizationUrl: 'https://accounts.google.com/o/oauth2/v2/auth?prompt=consent&access_type=offline&response_type=code',
+    //   scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email',
     }),
   ],
-  callbacks: {
-    async signIn(user, account, profile) {
-      console.log("Authentication successful!");
-      return true;
-    },
-    async session(session, user) {
-      console.log("Session created for user:", user);
-      return session;
-    },}
 })

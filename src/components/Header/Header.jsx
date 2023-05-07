@@ -19,7 +19,7 @@ const Header = () => {
             </div>
             <BiBell className={styles.icon}/>
             {/* <FaUserCircle className={styles.icon}/> */}
-            <img src={session.data.user.image} className={styles.image} onClick={()=>signOut()}/>
+            <img src={session.data.user.image} className={styles.image}/>
           </div>
       </div>
       <Analytics/>
