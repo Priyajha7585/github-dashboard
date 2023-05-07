@@ -72,6 +72,7 @@ function PieChart() {
               position: "right",
               labels: {
                 usePointStyle: true,
+                color:'black',
               },
             },
           },

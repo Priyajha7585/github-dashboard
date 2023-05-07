@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import styles from "./SideNavMobile.module.css";
 import { RiPieChart2Fill } from "react-icons/ri";
-import { BsTags } from "react-icons/bs";
+import { RiGitRepositoryFill } from "react-icons/ri";
 import { TbCalendarTime } from "react-icons/tb";
 import { BiUserCircle } from "react-icons/bi";
 import { AiOutlineSetting } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { signOut } from "next-auth/react";
 
 const SideNavMobile = () => {
   const [show, setShow] = useState(false);
@@ -25,13 +26,13 @@ const SideNavMobile = () => {
               <RiPieChart2Fill /> Dashboard
             </li>
             <li>
-              <BsTags /> Transactions
+              <RiGitRepositoryFill /> Repositories
             </li>
             <li>
-              <TbCalendarTime /> Schedules
+              <TbCalendarTime /> Activity
             </li>
             <li>
-              <BiUserCircle /> Users
+              <BiUserCircle /> Followers
             </li>
             <li>
               <AiOutlineSetting /> Settings
@@ -41,6 +42,7 @@ const SideNavMobile = () => {
           <div className={styles.help}>
             <p>Help</p>
             <p>Contact Us</p>
+            <button onClick={()=>signOut()}><p>Log Out</p></button>
           </div>
         </div>
     </div>

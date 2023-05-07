@@ -11,7 +11,7 @@ import githubApi from '@/fetchApi/githubApi'
 
 const Analytics = () => {
   const data = githubApi();
-    console.log(data)
+    // console.log(data)
   return (
     <div className={styles.main}>
       <div className={styles.cardRow}>

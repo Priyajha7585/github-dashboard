@@ -36,7 +36,7 @@
     height: 50%;
     width: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .wrapperOne p{
         font-size: 10px;
     }

@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
-          <h4 className={styles.title}>Dashboard</h4>
+          <h1 className={styles.title}>Dashboard</h1>
           <div className={styles.divWrapper}>
             <div className={styles.search}>
                 <input type='text' placeholder='Search here...'/>

@@ -43,7 +43,7 @@ const Form = () => {
           <button
             className={styles.signIn}
             type="submit"
-            onClick={() => console.log("register button clicked")}
+            onClick={()=>signIn()}
           >
             Sign In
           </button>
