@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from './Repos.module.css'
 
 const Repos = ({ username="Priyajha7585" }) => {
   const [latestRepos, setLatestRepos] = useState([]);
@@ -14,31 +15,51 @@ const Repos = ({ username="Priyajha7585" }) => {
         setLatestRepos(data);
       })
       .catch(error => console.error(error));
-  }, [username]);
-
+  }, []);
+  // console.log(latestRepos)
   return (
-    <div style={{color:'black'}}>
-      <h2>Latest Repositories</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Created Date</th>
-            <th>Last Modified</th>
-            <th>Number of Commits</th>
-          </tr>
-        </thead>
-        <tbody>
-          {latestRepos.map(repo => (
-            <tr key={repo.id}>
-              <td>{repo.name}</td>
-              <td>{repo.created_at}</td>
-              <td>{repo.updated_at}</td>
-              <td>{repo.commits_url}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className={styles.main} style={{color:'black'}}>
+      <h2 className={styles.title}>Latest Repositories</h2>
+      <div className={styles.point}>
+        <div className={styles.colorDiv1}></div>
+        <div className={styles.content}>
+          <h4>Repository Name : {latestRepos[0]?.name}</h4>
+          <p>Created At : {latestRepos[0]?.created_at}</p>
+          <p>Updated At : {latestRepos[0]?.updated_at}</p>
+        </div>
+      </div>
+      <div className={styles.point}>
+        <div className={styles.colorDiv2}></div>
+        <div className={styles.content}>
+          <h4>Repository Name : {latestRepos[1]?.name}</h4>
+          <p>Created At : {latestRepos[1]?.created_at}</p>
+          <p>Updated At : {latestRepos[1]?.updated_at}</p>
+        </div>
+      </div>
+      {/* <div className={styles.point}>
+        <div className={styles.colorDiv1}></div>
+        <div className={styles.content}>
+          <h4>Repository Name : {latestRepos[2].name}</h4>
+          <p>Created At : {latestRepos[2].created_at}</p>
+          <p>Updated At : {latestRepos[2].updated_at}</p>
+        </div>
+      </div> */}
+      {/* <div className={styles.point}>
+        <div className={styles.colorDiv2}></div>
+        <div className={styles.content}>
+          <h4>Repository Name : {latestRepos[3].name}</h4>
+          <p>Created At : {latestRepos[3].created_at}</p>
+          <p>Updated At : {latestRepos[3].updated_at}</p>
+        </div>
+      </div>
+      <div className={styles.point}>
+        <div className={styles.colorDiv1}></div>
+        <div className={styles.content}>
+          <h4>Repository Name : {latestRepos[4].name}</h4>
+          <p>Created At : {latestRepos[4].created_at}</p>
+          <p>Updated At : {latestRepos[4].updated_at}</p>
+        </div>
+      </div> */}
     </div>
   );
 };

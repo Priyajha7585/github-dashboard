@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Chart from 'chart.js/auto';
-import { Doughnut } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
+import styles from './PieChart.module.css';
 
 function PieChart() {
   const [languageData, setLanguageData] = useState([]);
@@ -29,9 +30,10 @@ function PieChart() {
   }, []);
 
   return (
-    <div>
-      <h2>Languages Used by priyajha7585</h2>
-      <Doughnut
+    <div className={styles.main}>
+      <h2 className={styles.title}>Languages Used by priyajha7585</h2>
+      <div className={styles.pie}>
+      <Pie 
         data={{
           labels: languageData.map(item => item.label),
           datasets: [
@@ -64,8 +66,18 @@ function PieChart() {
             },
           ],
         }}
+        options={{  
+          plugins: {
+            legend: {
+              position: "right",
+              labels: {
+                usePointStyle: true,
+              },
+            },
+          },
+    }}
         
-      />
+      /></div>
     </div>
   );
 }

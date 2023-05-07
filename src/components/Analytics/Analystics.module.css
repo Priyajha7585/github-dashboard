@@ -1,8 +1,9 @@
 .main{
-    height: 86.5;
+    height: 88.5vh;
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    background-color: blue;
 }
 .cardRow{
     display: flex;
@@ -21,8 +22,27 @@
     
 }
 .pieChart{
+    /* width: 75vw; */
+    background-color: green;
     display: flex;
     flex-direction: row;
     margin-top: 2.5vw;
     /* background-color: blue; */
 }
+
+@media only screen and (max-width: 767px) {
+    .main{
+        height: 72.5vh;
+        overflow: scroll;
+    }
+    .pieChart{
+        flex-direction: column;
+        margin-bottom: 2.5vh;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    .main{
+        margin-bottom: 2.5vh;
+    }
+    
+  }

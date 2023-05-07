@@ -1,0 +1,70 @@
+.main{
+    width: 37vw;
+    height: 15vw;
+    /* background-color: blue; */
+    border: 2px solid black;
+    margin-left: 2.5vh;
+    /* font-size: calc(16 + (24 - 14) * ((100vw - 320px) / (1920 - 320))); */
+}
+.title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 18px; */
+    font-size: 18px;
+    color: #000000;
+}
+.point{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+}
+.point h4{
+    font-size: 16px;
+}
+.point p{
+    font-size: 14px;
+}
+.colorDiv1{
+    width: 1vw;
+    background-color: lightblue;
+    margin-right: 10px;
+}
+.colorDiv2{
+    width: 1vw;
+    background-color: pink;
+    margin-right: 10px;
+}
+  @media only screen and (max-width: 1024px) {
+    .main{
+        height: 21vw;
+    }
+  } 
+  @media only screen and (max-width: 767px) {
+    .main{
+        width: 95vw;
+        height: 30vh;
+    }
+    .title{
+        font-size: 10px;
+    }
+    .point h4{
+        font-size: 9px;
+    }
+    .point p{
+        font-size: 8px;
+    }
+  } 
+  /* @media only screen and (max-width: 426px) {
+    .main{
+        width: 95vw;
+        height: 30vh;
+    }
+  }  */
+
+
+

@@ -23,10 +23,10 @@ const Analytics = () => {
       <div className={styles.graph}>
         <CommitsGraph />
       </div>
-      {/* <div className={styles.pieChart}>
+      <div className={styles.pieChart}>
         <PieChart/>
         <Repos />
-      </div> */}
+      </div>
     </div>
   )
 }
