@@ -10,4 +10,13 @@ export default NextAuth({
       scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email',
     }),
   ],
+  callbacks: {
+    async signIn(user, account, profile) {
+      console.log("Authentication successful!");
+      return true;
+    },
+    async session(session, user) {
+      console.log("Session created for user:", user);
+      return session;
+    },}
 })
